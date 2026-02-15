@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Command Center — Chintu Enterprises</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="admin">
+    <div class="admin-inner">
+      <h1>Command Center</h1>
+
+      <div id="loginBox" class="card fade-in-up">
+        <label>Enter admin password
+          <input id="adminPass" type="password" placeholder="password">
+        </label>
+        <div class="actions">
+          <button id="loginBtn" class="btn-primary">Login</button>
+        </div>
+        <small>Default password: <strong>admin</strong> (change later)</small>
+      </div>
+
+      <div id="editor" class="card hidden">
+        <h2>Site Editor</h2>
+
+        <section>
+          <h3>Hero</h3>
+          <label>Title <input id="heroTitle"></label>
+          <label>Lead <input id="heroLead"></label>
+          <div class="kpi-row">
+            <input id="kpi1" placeholder="KPI 1">
+            <input id="kpi2" placeholder="KPI 2">
+            <input id="kpi3" placeholder="KPI 3">
+          </div>
+        </section>
+
+        <section>
+          <h3>Portfolio</h3>
+          <div id="portfolioList"></div>
+          <div class="row">
+            <input id="newCaseTitle" placeholder="Title">
+            <input id="newCaseContent" placeholder="Short description">
+            <input id="newCaseThumb" placeholder="Thumbnail URL (optional)">
+            <button id="uploadThumbBtn" class="btn-secondary">Upload image</button>
+            <input id="thumbFile" type="file" accept="image/*" style="display:none">
+            <input id="newCaseLink" placeholder="Project / repo URL (optional)">
+            <button id="addCase" class="btn-secondary">Add</button>
+          </div>
+        </section>
+
+        <section>
+          <h3>Submissions / Orders</h3>
+          <div id="submissionsList" style="max-height:300px;overflow:auto"></div>
+          <div class="actions">
+            <button id="refreshSubs" class="btn-secondary">Refresh (local)</button>
+            <button id="fetchServerSubs" class="btn-secondary">Fetch Server Submissions</button>
+            <button id="exportSubs" class="btn-primary">Export Submissions</button>
+          </div>
+        </section>
+
+        <section>
+          <h3>Services (3)</h3>
+          <div class="service-list">
+            <label>Service 1 <input id="s1"></label>
+            <label>Service 2 <input id="s2"></label>
+            <label>Service 3 <input id="s3"></label>
+          </div>
+        </section>
+
+        <div class="actions">
+          <button id="saveBtn" class="btn-primary">Save</button>
+          <button id="exportBtn" class="btn-secondary">Export JSON</button>
+          <input id="importFile" type="file" accept="application/json" style="display:none">
+          <button id="importBtn" class="btn-ghost">Import JSON</button>
+          <button id="resetBtn" class="btn-ghost">Reset</button>
+          <a id="previewLink" class="btn-primary" href="../index.html" target="_blank">Open Site Preview</a>
+        </div>
+      </div>
+
+      <div id="msg" class="muted small"></div>
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+
+</html>

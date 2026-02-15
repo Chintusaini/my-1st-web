@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chintu Saini | Digital Solutions for Modern Businesses</title>
+  <meta name="description" content="Enterprise-grade web development, design and growth for startups and companies." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Preload transition */
+    body {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    body.loaded {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Chintu Saini</div>
+      <nav class="nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="btn-ghost">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg-3d">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
+          <div class="eyebrow fade-in-up">Future-Ready Digital Solutions</div>
+          <h1 class="glitch-text fade-in-up" data-text="Enterprise web products that scale"
+            style="animation-delay: 0.1s">Enterprise web products that scale</h1>
+          <p class="lead fade-in-up" style="animation-delay: 0.2s">Crafting immersive, high-performance web experiences
+            with next-generation technologies.</p>
+
+          <div class="cta-row fade-in-up" style="animation-delay: 0.3s">
+            <a href="#contact" class="btn-primary glow-effect">
+              <span>Start a Project</span>
+              <div class="liquid"></div>
+            </a>
+            <a href="#portfolio" class="btn-secondary glass-btn">View Portfolio</a>
+          </div>
+
+          <div class="kpis fade-in-up" style="animation-delay: 0.4s">
+            <div class="kpi-item">
+              <span class="kpi-num">20+</span>
+              <span class="kpi-label">Projects</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-num">10+</span>
+              <span class="kpi-label">Clients</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-num">5+</span>
+              <span class="kpi-label">Years Exp.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="card glass-card tilt-card-3d" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <div class="card-content">
+              <div class="code-snippet">
+                <span class="line"><span class="const">const</span> <span class="var">success</span> = <span
+                    class="await">await</span> <span class="func">deploy</span>(<span
+                    class="str">'NextGen'</span>);</span>
+                <span class="line"><span class="if">if</span>(success) <span class="func">scale</span>(<span
+                    class="num">1000</span>);</span>
+              </div>
+              <h3>Your Vision, <br><span class="highlight">Amplified.</span></h3>
+            </div>
+            <div class="card-layers">
+              <div class="layer layer-1"></div>
+              <div class="layer layer-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section container">
+      <h2 class="section-title fade-in-up">Selected Works</h2>
+      <p class="muted fade-in-up">Case studies: problem → solution → impact.</p>
+      <div class="grid perspective-grid">
+        <article class="case glass-card tilt-card-3d" data-tilt data-tilt-scale="1.05">
+          <div class="case-thumb-container">
+            <img class="case-thumb" src="uploads/acme_thumb.svg" alt="Acme Corp screenshot" />
+            <div class="overlay"></div>
+          </div>
+          <div class="case-content">
+            <h3>Acme Corp</h3>
+            <p>Challenge: Legacy platform causing churn.<br />Solution: Rebuilt SPA with scalable API.<br />Impact:
+              <span class="highlight">+35% conversion</span>.
+            </p>
+          </div>
+        </article>
+        <article class="case glass-card tilt-card-3d" data-tilt data-tilt-scale="1.05">
+          <div class="case-thumb-container">
+            <img class="case-thumb" src="uploads/sim_thumb.svg" alt="Sim Vault screenshot" />
+            <div class="overlay"></div>
+          </div>
+          <div class="case-content">
+            <h3>Sim Vault</h3>
+            <p>
+              <strong>Challenge:</strong> Secure secure simulation management.<br />
+              <strong>Solution:</strong> Encrypted vault with role-based access.<br />
+              <strong>Impact:</strong> <span class="highlight">60% faster</span> reproduction time.<br />
+              <a href="https://github.com/Chintusaini/sim_vault" target="_blank" rel="noopener" class="text-link">View
+                Repository</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title fade-in-up">Services</h2>
+        <div class="cards scene-3d">
+          <div class="service-card glass-panel tilt-card-3d" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+            <div class="icon-3d">💻</div>
+            <h4>Web Development</h4>
+            <p>Enterprise web apps, APIs, and integrations.<br /><strong>$5k–50k+</strong></p>
+          </div>
+          <div class="service-card glass-panel tilt-card-3d" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+            <div class="icon-3d">🎨</div>
+            <h4>UI / UX Design</h4>
+            <p> immersive design systems, prototyping, and user research.
+            </p>
+          </div>
+          <div class="service-card glass-panel tilt-card-3d" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+            <div class="icon-3d">📱</div>
+            <h4>App Development</h4>
+            <p>Native & Cross-platform mobile apps for iOS & Android.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section container">
+      <h2 class="section-title">Process</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content"><strong>Consultation</strong><br>Discovery call</div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content"><strong>Strategy</strong><br>Proposals & Prototypes</div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content"><strong>Development</strong><br>Agile Sprints</div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-content"><strong>Launch</strong><br>QA & Rollout</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section container alt-bg">
+      <h2 class="section-title">Testimonials</h2>
+      <blockquote class="testimonial glass-card">
+        “Chintu delivered a robust platform on time — the team's trust rose significantly.”<br /><cite>— Product Lead,
+          Acme Corp</cite>
+      </blockquote>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="contact-wrapper glass-panel">
+        <div class="contact-header">
+          <h2>Start a Project</h2>
+          <p class="muted">Tell me about your project — I’ll respond within 2 business days.</p>
+        </div>
+        <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Full name</label>
+            <input name="name" required class="glass-input">
+          </div>
+          <div class="form-group">
+            <label>Company</label>
+            <input name="company" class="glass-input">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input name="email" type="email" required class="glass-input">
+          </div>
+          <div class="form-group">
+            <label>Project budget</label>
+            <select name="budget" class="glass-input">
+              <option value="<5k">&lt;$5k</option>
+              <option value="5k-15k">$5k–15k</option>
+              <option value="15k-50k">$15k–50k</option>
+              <option value=">50k">$50k+</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label>Desired timeline</label>
+            <input name="timeline" placeholder="e.g., Q3 2026" class="glass-input">
+          </div>
+          <div class="form-group full-width">
+            <label>Project summary</label>
+            <textarea name="summary" rows="4" class="glass-input"></textarea>
+          </div>
+          <div class="form-group checkbox-group">
+            <label>NDA required? <input name="nda" type="checkbox"></label>
+            <label class="consent"><input name="consent" type="checkbox" required> I consent to be contacted regarding
+              this inquiry.</label>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-primary glow-effect">Submit Request</button>
+            <button type="reset" class="btn-ghost">Reset</button>
+          </div>
+        </form>
+        <div id="formMessage" class="form-message" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>Contact: <a href="mailto:chintu@chintuenterprises.in">chintu@chintuenterprises.in</a></div>
+      <div class="small">© Chintu Saini — Digital Solutions for Modern Businesses</div>
+    </div>
+  </footer>
+
+  <script>
+    async function handleSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('formMessage');
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form).entries());
+      // checkbox handling
+      data.nda = form.querySelector('input[name="nda"]')?.checked || false;
+      data.consent = form.querySelector('input[name="consent"]')?.checked || false;
+
+      // Try sending to backend API if available
+      try {
+        // save locally so admin panel can show submissions even if server is offline
+        try {
+          const subsRaw = localStorage.getItem('submissions');
+          const subs = subsRaw ? JSON.parse(subsRaw) : [];
+          subs.unshift(Object.assign({}, data, { date: new Date().toISOString() }));
+          localStorage.setItem('submissions', JSON.stringify(subs));
+        } catch (e) { console.warn('local save failed', e); }
+
+        const resp = await fetch('/api/contact', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data)
+        });
+        if (resp.ok) {
+          msg.textContent = 'Thanks — we\'ve received your message and will reply soon.';
+          msg.classList.add('visible');
+          form.reset();
+          return;
+        }
+        const json = await resp.json();
+        msg.textContent = json?.error || 'Submission failed';
+        msg.classList.add('visible');
+      } catch (err) {
+        // fallback to simple client-side message if server not running
+        msg.textContent = 'Thanks — we\'ll review your brief and reply within 2 business days.';
+        msg.classList.add('visible');
+        form.reset();
+      }
+    }
+  </script>
+  <script>
+    // Advanced 3D Tilt & Parallax
+    (function () {
+      // Init standard tilt cards
+      const tiltCards = document.querySelectorAll('.tilt-card-3d');
+
+      tiltCards.forEach(card => {
+        card.addEventListener('mousemove', handleMove);
+        card.addEventListener('mouseleave', handleLeave);
+      });
+
+      function handleMove(e) {
+        const card = this;
+        const cardRect = card.getBoundingClientRect();
+        const centerX = cardRect.left + cardRect.width / 2;
+        const centerY = cardRect.top + cardRect.height / 2;
+        const mouseX = e.clientX - centerX;
+        const mouseY = e.clientY - centerY;
+
+        // Rotation
+        const maxRotate = 15;
+        const rotateX = (mouseY / (cardRect.height / 2)) * -maxRotate;
+        const rotateY = (mouseX / (cardRect.width / 2)) * maxRotate;
+
+        // Glare effect
+        const glare = card.querySelector('.glare');
+        if (glare) {
+          glare.style.left = `${(mouseX / cardRect.width) * 100 + 50}%`;
+          glare.style.top = `${(mouseY / cardRect.height) * 100 + 50}%`;
+          glare.style.opacity = '1';
+        }
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+      }
+
+      function handleLeave(e) {
+        this.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        const glare = this.querySelector('.glare');
+        if (glare) glare.style.opacity = '0';
+      }
+
+      // Global Parallax for Background Shapes
+      document.addEventListener('mousemove', (e) => {
+        const shapes = document.querySelectorAll('.floating-shape');
+        const x = (e.clientX / window.innerWidth) - 0.5;
+        const y = (e.clientY / window.innerHeight) - 0.5;
+
+        shapes.forEach((shape, index) => {
+          const speed = (index + 1) * 20;
+          shape.style.transform = `translate(${x * speed}px, ${y * speed}px) rotate(${x * 10}deg)`;
+        });
+      });
+
+      // Reveal on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+      // Page Loaded
+      window.addEventListener('load', () => document.body.classList.add('loaded'));
+    })();
+  </script>
+  <script>
+    // Hydrate page from admin localStorage (if present)
+    (function () {
+      try {
+        const raw = localStorage.getItem('siteData');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        if (data.hero) {
+          const h = document.querySelector('.hero h1'); if (h && data.hero.title) h.textContent = data.hero.title;
+          const lead = document.querySelector('.lead'); if (lead && data.hero.lead) lead.textContent = data.hero.lead;
+        }
+        if (Array.isArray(data.kpis)) {
+          const k = document.querySelectorAll('.kpis span');
+          if (k.length >= 1) { k.forEach((el, i) => { el.textContent = data.kpis[i] || el.textContent }); }
+        }
+        if (Array.isArray(data.portfolio)) {
+          const grid = document.querySelector('.grid');
+          if (grid) {
+            grid.innerHTML = ''; data.portfolio.forEach(item => {
+              const art = document.createElement('article'); art.className = 'case tilt-card';
+              if (item.thumbnail) {
+                const img = document.createElement('img'); img.className = 'case-thumb'; img.src = item.thumbnail; img.alt = item.title || 'project';
+                art.appendChild(img);
+              }
+              const h3 = document.createElement('h3'); h3.textContent = item.title || '';
+              const p = document.createElement('p'); p.innerHTML = (item.content || '').replace(/\n/g, '<br/>');
+              if (item.link) {
+                const a = document.createElement('a'); a.href = item.link; a.target = '_blank'; a.rel = 'noopener'; a.className = 'case-link'; a.textContent = 'Open project';
+                p.appendChild(document.createElement('br'));
+                p.appendChild(a);
+              }
+              art.appendChild(h3); art.appendChild(p); grid.appendChild(art);
+            })
+          }
+        }
+        /*
+        if (Array.isArray(data.services)) {
+          const cards = document.querySelector('.cards');
+          if (cards) {
+            cards.innerHTML = ''; data.services.forEach(s => {
+              const div = document.createElement('div'); div.className = 'service-card tilt-card';
+              const h4 = document.createElement('h4'); h4.textContent = s || '';
+              const p = document.createElement('p'); p.textContent = '';
+              div.appendChild(h4); div.appendChild(p); cards.appendChild(div);
+            })
+          }
+        }
+        */
+      } catch (e) { console.warn('hydrate error', e) }
+    })();
+  </script>
+  <script>
+    // Portfolio modal viewer (delegated)
+    (function () {
+      const grid = document.querySelector('.grid');
+      if (!grid) return;
+
+      // create modal
+      const modal = document.createElement('div'); modal.className = 'modal hidden';
+      modal.innerHTML = `
+        <div class="modal-backdrop"></div>
+        <div class="modal-body card">
+          <button class="modal-close">✕</button>
+          <img class="modal-thumb" src="" alt="" />
+          <h3 class="modal-title"></h3>
+          <div class="modal-content"></div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+
+      function openModal(title, html, thumb) {
+        modal.querySelector('.modal-title').textContent = title || '';
+        modal.querySelector('.modal-content').innerHTML = html || '';
+        const mt = modal.querySelector('.modal-thumb');
+        if (thumb) { mt.src = thumb; mt.style.display = 'block'; } else { mt.style.display = 'none'; }
+        modal.classList.remove('hidden');
+      }
+      function closeModal() { modal.classList.add('hidden'); }
+
+      modal.addEventListener('click', (e) => { if (e.target.classList.contains('modal-close') || e.target.classList.contains('modal-backdrop')) closeModal(); });
+
+      grid.addEventListener('click', (e) => {
+        const article = e.target.closest('.case');
+        if (!article) return;
+        const title = article.querySelector('h3')?.textContent || '';
+        const content = article.querySelector('p')?.innerHTML || '';
+        const thumb = article.querySelector('.case-thumb')?.src || '';
+        openModal(title, content, thumb);
+      });
+    })();
+  </script>
+  <script>
+    // Ensure thumbnails with empty src don't show broken image — use placeholder data URL
+    (function () {
+      const placeholder = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="100%" height="100%" fill="%23eef5fb"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%2395a5b2" font-family="Inter,Arial" font-size="36">No image</text></svg>';
+      document.querySelectorAll('.case-thumb').forEach(img => {
+        if (!img.getAttribute('src')) img.src = placeholder;
+      });
+    })();
+  </script>
+</body>
+
+</html>
